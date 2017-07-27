@@ -7,9 +7,9 @@
         "node": "8.1.4"
     },
     "scripts": {
-        "prod": "node ./start.js",
+        "start": "node ./start.js",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
+        "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
         "watch": "nodemon ./start.js --ignore public/",
         "assets": "webpack -w --display-max-modules 0"
     },

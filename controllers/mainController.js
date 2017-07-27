@@ -7,9 +7,18 @@ exports.homepage = (req, res) => {
     res.send('Hey! It works!');
 }
 
-exports.getUrl = (req, res) => {
-    //Find by urlId - Success
-    //Find by urlId - Failure
+exports.getUrl = async (req, res) => {
+    const result = await Url.findOne({ shortUrl: req.params.urlId});
+    if (!result) {
+        //Find by urlId - Failure
+        res.send({
+            "error": "This url is not on the database."
+        });
+    }
+    else {
+        //Find by urlId - Success
+        res.redirect(result.url);
+    }
 }
 
 exports.addUrl = async(req, res) => {

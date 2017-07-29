@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/abhinavmall/url-shortener-microservice.svg?style=svg)](https://circleci.com/gh/abhinavmall/url-shortener-microservice)
+
 # FreeCodeCamp API Basejump: URL Shortener Microservice
 ## User stories:
 1. I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.

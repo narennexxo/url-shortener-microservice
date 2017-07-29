@@ -8,7 +8,7 @@
     },
     "scripts": {
         "start": "node ./start.js",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "./node_modules/.bin/mocha ./test/routes/index",
         "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
         "watch": "nodemon ./start.js --ignore public/",
         "assets": "webpack -w --display-max-modules 0"
@@ -36,7 +36,10 @@
         "express-session": "^1.15.1",
         "mongoose": "^4.11.4",
         "path": "^0.12.7",
-        "valid-url": "^1.0.9"
+        "valid-url": "^1.0.9",
+        "express": "4.12.3",
+        "mocha": "2.2.4",
+        "superagent": "1.2.0"
     },
     "devDependencies": {
         "autoprefixer": "6.7.7",

@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 // import environmental variables from variables.env file
 require('dotenv').config({ path: 'variables.env' });
 
-// Connect to our Database and handle an bad connections
+// Connect to Mongo Atlas Database and handle bad connections
 mongoose.connect(process.env.DATABASE);
 mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
 mongoose.connection.on('error', (err) => {

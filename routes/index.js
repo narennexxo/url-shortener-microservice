@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const storeController = require('../controllers/mainController');
+const mainController = require('../controllers/mainController');
 
-router.get('/', storeController.homepage);
+router.get('/', mainController.homepage);
 
-router.get('/add/:url*', storeController.addUrl);
-router.post('/add/:url*', storeController.addUrl);
+router.get('/add/:url*', mainController.addUrl);
+router.post('/add/:url*', mainController.addUrl);
 
-router.get('/:urlId', storeController.getUrl);
-router.post('/:urlId', storeController.getUrl);
+router.get('/:urlId', mainController.getUrl);
+router.post('/:urlId', mainController.getUrl);
 
 module.exports = router;

@@ -28,3 +28,5 @@ https://url-shortener-62805.herokuapp.com/44f6536
 
 ```
 https://techcrunch.com/
+
+Follow me on twitter.

@@ -39,7 +39,7 @@
         "valid-url": "^1.0.9",
         "express": "4.12.3",
         "mocha": "2.2.4",
-        "superagent": "1.2.0"
+        "superagent": "3.7.0"
     },
     "devDependencies": {
         "autoprefixer": "6.7.7",

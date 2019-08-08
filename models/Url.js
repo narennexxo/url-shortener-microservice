@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
-mongoose.Promise = global.Promise;
+// mongoose.Promise = global.Promise;
 
 const urlSchema = new mongoose.Schema({
     url: {
@@ -15,4 +15,4 @@ const urlSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Url', urlSchema);
+// module.exports = mongoose.model('Url', urlSchema);

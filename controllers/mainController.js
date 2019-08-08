@@ -10,7 +10,7 @@ exports.homepage = (req, res) => {
 exports.getmessage = (req, res) => {
     var twilio = require('twilio');
     const accountSid = process.env.watsappacid ;
-    const authToken = process.env.watsappauth; 
+    const authToken = process.env.watsappauth;
     const client = require('twilio')(accountSid, authToken);
 
     client.messages
@@ -27,8 +27,8 @@ exports.getmessage = (req, res) => {
 exports.sendmessage = (req, res) => {
     console.log("test");
     var twilio = require('twilio');
-    const accountSid = 'ACfd6243fb870cbf9a0c666e1d19b95d51';
-    const authToken = 'd6c15c1ea286b2402402d3f2ba67055f';
+    const accountSid = process.env.watsappacid ;
+    const authToken = process.env.watsappauth;
     const client = require('twilio')(accountSid, authToken);
 
     client.messages

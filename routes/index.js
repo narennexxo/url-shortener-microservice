@@ -13,6 +13,8 @@ router.get('/', mainController.homepage);
 router.get('/sendmessage', mainController.sendmessage);
 
 
+router.post('/getmessage', mainController.getmessage);
+
 router.get('/getmessage', mainController.getmessage);
 
 module.exports = router;
